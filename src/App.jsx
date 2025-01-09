@@ -8,9 +8,6 @@ export default function App() {
   const [game, setGame] = React.useState(0)
   const [dice, setDice] = React.useState(() => generateAllNewDice())
 
-
-  // const [gameWon, setGameWon] = React.useState(false)
-
   function generateAllNewDice() {
     let arr = []
     for (let i = 0; i < 10; i++) {

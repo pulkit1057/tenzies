@@ -6,7 +6,7 @@ import Confetti from "react-confetti";
 
 export default function App() {
   const [game, setGame] = React.useState(0)
-  const [dice, setDice] = React.useState(generateAllNewDice())
+  const [dice, setDice] = React.useState(() => generateAllNewDice())
 
 
   // const [gameWon, setGameWon] = React.useState(false)
